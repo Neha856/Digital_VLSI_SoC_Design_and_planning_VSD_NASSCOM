@@ -1,4 +1,4 @@
-# Neha856
+# Digital VLSI SoC Design and planning
 
 <details>
 
@@ -1408,7 +1408,7 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 </details>
 
 <details> 
-	<summary> DAY 4 -  Final steps for RTL2GDS using tritonRoute and openSTA </summary>
+	<summary> DAY 5 -  Final steps for RTL2GDS using tritonRoute and openSTA </summary>
 
 # Section 1 - Routing and design rule check (DRC)
 ## Lec1to3 : Introduction to Maze Routing – Lee’s algorithm,  Lee’s Algorithm conclusion and DRC
