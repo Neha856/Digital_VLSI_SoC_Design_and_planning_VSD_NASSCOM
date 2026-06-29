@@ -244,7 +244,7 @@ It is a reference/open-source SoC platform used for learning and prototyping ASI
 
 - **DFT (Design for Testability)** : DFT adds extra test structures into the design to make chip testing easier after fabrication. Common techniques are scan chains, scan flip-flops, and BIST. It helps detect manufacturing defects and improves test coverage.
 
-![image alt]()
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/d1a3c1245b433b890b1c738f69ed05e7de3a2d7e/Images/xmyCD0IjNOtSfyytkBLidf4MmUmiie4AGvqi8xGlS0z9XAy2fOrWmLiNOjo-M82QKDD-pT7ZUHDOENUKsrgCxurpOoAuGdJtxx_Ac13DyEIMgVv63oo8H03039P3uU8ysyTTPq0T_9qJd8HDuRLbNJ7wCHWN45mpyGZGh62Ygk_U9Sl9PNK4zy4tUmU4xKxv.jpg)
 
 - **Placement Implementation/PnR (Place and Route)** : PnR is the physical implementation stage where cells are placed and connected using metal routing.
 Placement decides cell locations, and routing creates physical interconnections.Final chip layout is generated during this stage.
@@ -1106,7 +1106,7 @@ run_synthesis
 ```
 ![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20233607.png)
 ![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/chip_area.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/a30b57188ded1e16565b869bc026f42e1a4128b9/time_slack.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/d1a3c1245b433b890b1c738f69ed05e7de3a2d7e/Images/time_slack.png)
 
 Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command
 
