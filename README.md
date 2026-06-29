@@ -26,7 +26,7 @@ Example - **QFN48** means Quad Flat No-lead package with 48 pins.
 - **Pads** : Metal connection points on the die boundary used to connect internal circuits to external **package** pins for signals, power, and ground.
 - **Core** : The main functional block inside the die, such as a CPU core, processor core, or DSP core that performs computations and logic operations.
 
-  ![image alt](https://github.com/Neha856/SoC_Design/blob/97f80eabe5534aeaf75e0e8568fe102e50d0a392/Screenshot%202026-05-15%20090510.png)
+  ![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/main/Images/Screenshot%202026-05-15%20090510.png)
 
 ### What is Foundry, IPs, Foundry IPs and Macros
 
@@ -35,7 +35,7 @@ Example - **QFN48** means Quad Flat No-lead package with 48 pins.
 - **Foundry IPs**: These are IP blocks provided or qualified by the foundry for a specific technology node.It has a intelligent technique. Common examples are: Standard cells, SRAM, I/O cells, PLL, ESD cells.
 - **Macros**: Macros are large pre-designed physical blocks used during floorplanning and layout. They usually have fixed size and placement constraints and it is a pure digital logic. Examples: SRAM macro, ROM macro, Analog blocks, PLL macro.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/00ca96ded73767c8a2cff0b590671167f70150f8/Screenshot%202026-05-15%20090952.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-15%20090952.png)
 
 
 ## Lec2 : RISCV Introduction
@@ -72,7 +72,7 @@ JAL   -> jump and link
  **Input** : User commands/actions
  **Output** : High-level program written in: C, C++,Java, Python.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/a6132d1a286d71da2ac6ca3e92bd1f7ab6f378a4/Screenshot%202026-05-15%20092410.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-15%20092410.png)
 
 - **System Software Layer** : This has Operating system, compiler and Assembler.
   - **Operating System** : The Operating System (Windows/Linux) manages files, IO devices, Memory allocation, Process scheduling and Device control. The output                              of OS is Provides APIs(Application programming interface)/system calls to applications.
@@ -81,7 +81,7 @@ JAL   -> jump and link
 
 - **Hardware** : Hardware/processor executes this binary code physically using logic gates and transistors. It contains: ALU,Registers,Memory, Control Unit, Interconnects,Transistors. HDL languages like Verilog and VHDL are used separately by hardware engineers to design the processor hardware itself.The output of hardware is Actual physical operations like Arithmetic,Memory access,Signal generation,Display/output control etc.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/a6132d1a286d71da2ac6ca3e92bd1f7ab6f378a4/Screenshot%202026-05-15%20092946.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-15%20092946.png)
 
 # Section 2 - SoC Design and OpenLANE
 ## Lec1 : Introduction of all components of open source digital ASIC Design
@@ -94,7 +94,7 @@ ASIC is a custom chip designed for a specific application or function. They need
 
 - **3.PDK Data** : PDK means **Process Design Kit**.This is the technology information provided by the foundry. It contains: transistor models, design rules, standard cells, SPICE models, layer information, DRC/LVS rules. Without PDK tools do not know fabrication rules and chip cannot be manufactured correctly. PDK is the bridge between design and fabrication technology.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/3c8612f982bb6a2e0474979b7e1825f27431f6b7/Screenshot%202026-05-15%20094629.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-15%20094629.png)
 
 #### Why Open Source?
 Earlier ASIC design was expensive because of commercial EDA tools cost huge money and foundry PDKs were closed/private. Open-source movement provides:
@@ -140,7 +140,7 @@ Packaged Chip
 
 ## Lec2 : Simplified RTL2GDS Flow
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/e103318e668825ed5329ff25b3f162d11c2ff586/Screenshot%202026-05-16%20123414.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20123414.png)
 
 ### Synthesis (Synth)
 
@@ -150,7 +150,7 @@ Packaged Chip
 * After synthesis, the design becomes hardware-realistic instead of behavioral code.
 * Output of synthesis is a gate-level netlist.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/47163e27ed3a6e8061f74ce175d52cdababe1fd8/Screenshot%202026-05-16%20123640.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20123640.png)
 
 ### FP + PP (Floorplanning + Power Planning)
 
@@ -168,7 +168,7 @@ Packaged Chip
 * Only component locations are decided here; connections are not completed yet.
 * Proper placement helps achieve timing closure and easier routing.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/f6bcf7d82cefb4e8569307c279bd6d96f3613e2f/Screenshot%202026-05-16%20123842.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20123842.png)
 
 ### CTS (Clock Tree Synthesis)
 
@@ -212,7 +212,7 @@ OpenLANE is an open-source automated ASIC physical design flow. It connects mult
 
 It is a reference/open-source SoC platform used for learning and prototyping ASICs. In simple word StriVe is a ready-made chip platform/template where designers can plug in their own hardware design. StriVe provides processor subsystem, memory interface, GPIO, integration framework, So users can directly add their own RTL block into a working chip environment.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/834162d834e5814948947cdbc10b7020e196dcb5/Screenshot%202026-05-16%20150339.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20150339.png)
 
 
 #### Simple Difference
@@ -229,12 +229,12 @@ It is a reference/open-source SoC platform used for learning and prototyping ASI
 
 ## Lec4 : Introduction of OpenLANE detailed ASIC design flow
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/834162d834e5814948947cdbc10b7020e196dcb5/Screenshot%202026-05-16%20150620.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20150620.png)
 
 
 - **Synthesis Exploration** : Synthesis exploration tries different synthesis settings to improve timing, area, and power. It helps find the best optimized gate-level implementation from RTL. Tools mainly adjust mapping, constraints, and optimization strategies.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/e96a1e62ed8cb6f78e06a457e56afef60265a513/Screenshot%202026-05-16%20152829.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20152829.png)
 
 
 - **Design Exploration** : Design exploration checks different floorplans, utilization, placement, and routing possibilities.It helps identify the best chip architecture and physical implementation setup.The goal is to improve performance, congestion, timing, and chip area.
@@ -244,7 +244,7 @@ It is a reference/open-source SoC platform used for learning and prototyping ASI
 
 - **DFT (Design for Testability)** : DFT adds extra test structures into the design to make chip testing easier after fabrication. Common techniques are scan chains, scan flip-flops, and BIST. It helps detect manufacturing defects and improves test coverage.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/e96a1e62ed8cb6f78e06a457e56afef60265a513/xmyCD0IjNOtSfyytkBLidf4MmUmiie4AGvqi8xGlS0z9XAy2fOrWmLiNOjo-M82QKDD-pT7ZUHDOENUKsrgCxurpOoAuGdJtxx_Ac13DyEIMgVv63oo8H03039P3uU8ysyTTPq0T_9qJd8HDuRLbNJ7wCHWN45mpyGZGh62Ygk_U9Sl9PNK4zy4tUmU4xKxv.jpg)
+![image alt]()
 
 - **Placement Implementation/PnR (Place and Route)** : PnR is the physical implementation stage where cells are placed and connected using metal routing.
 Placement decides cell locations, and routing creates physical interconnections.Final chip layout is generated during this stage.
@@ -329,7 +329,7 @@ package require openlane 1.0.2
 prep -design picorv32a
 ```
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/14f837c848a55b775ffa3c5e522d8fa270e95e65/Screenshot%202026-05-16%20214243.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20214243.png)
 
 ## Lec3 : Review files after design prep and run synthesis 
 ### Running Synthesis
@@ -337,11 +337,11 @@ prep -design picorv32a
 ```tcl
 run_synthesis
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/24caba66c092c8214e7564dc7c0e02836cabaac2/Screenshot%202026-05-16%20222940.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20222940.png)
 
 After Synthesis my picorv.def file is not visible in vsd explorer so i have used below command.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/d0dd7188427661ad3a47cd45a325f1f75e9b9498/Screenshot%202026-05-16%20222154.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20222154.png)
 
 ### What is config.tcl
 
@@ -362,7 +362,7 @@ OpenLane automates the complete physical design flow like synthesis, floorplanni
 After synthesis completes, we can calculate the **flop ratio** — a useful sanity check. Helps understand how much sequential logic is present in design.
 Higher flop ratio usually increases clock network complexity and power. 
 
-![image.alt](https://github.com/Neha856/SoC_Design/blob/24caba66c092c8214e7564dc7c0e02836cabaac2/Screenshot%202026-05-16%20223035.png)
+![image.alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-16%20223035.png)
 
 ```text
 Flop Ratio = (No. of D Flip-Flops) / (Total No. of Cells)
@@ -386,7 +386,7 @@ Flop Ratio = (No. of D Flip-Flops) / (Total No. of Cells)
                          **Aspect Ratio** = Height / Width of the core
 
 Below flow describes the process of defining width and height of core and Die.**Netlist:** Describes connectivity of Electronics design.
-![image alt](https://github.com/Neha856/SoC_Design/blob/9dd8145eef251e98c548bc957f00279636ead7d0/Presentation1.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation1.png)
 
 ## Lec2 : Concept of pre-placed cells
 Pre-placed cells are fixed cells/IP or macros(Memory block, clk gating cell, comparator, MUX, power managment block) whose locations are decided before automatic placement and routing starts.The placer cannot move these cells during placement. The benifit is that it is implemented once and can be instantiate multiple times during floorplanning.
@@ -399,16 +399,16 @@ Pre-placed cells are fixed cells/IP or macros(Memory block, clk gating cell, com
 - **Disadvantage of Large Distance from Main Power Supply:** If a block is far from power source then the power wire resistance increases, IR drop increases, switching noise becomes larger, timing failures may occur and also create delay, wrong logic at output.
 - **How Decoupling Capacitor Solves This:** Decoupling capacitor (decap) acts like a local temporary charge storage near the circuit block. When sudden switching current is needed decap quickly supplies current locally, reduces voltage drop, stabilizes VDD/GND and reduces noise and power fluctuations.So decaps improves power integrity, noise stability and reliable switching.
 
-  ![image alt](https://github.com/Neha856/SoC_Design/blob/d0b88032899513d1fc604aef97ccb5c3fe99dd60/Presentation2.png)
+  ![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation2.png)
   
 
 ## Lec4 :  Power planning
 Till now we have resolved current demand of each elements/ckt within the block using de-cap. Now suppose same blocks(IP/Macro) is used multiple times in a chip and want to receive signal from Driver to Load Macro. Suppose one power supply is given to all. here its not possible to fit decoupling capacitor all over the chip, Multiple VDD and VSS rails are distributed in both metal layers so that every standard cell has a nearby power tap, minimising IR drop and electromigration risk.
-![image alt](https://github.com/Neha856/SoC_Design/blob/3086b73b955b8a8a5d1c0285dad780b89d495485/Presentation3.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation3.png)
 
 
 ## Lec5 : Pin placement and logical cell placement blockage
-![image alt](https://github.com/Neha856/SoC_Design/blob/e93f9c7cd6738ce9dda5c236055ec289f5a67b7f/Presentation5.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation5.png)
 
 
 ## Lec6(LAB) :  Steps to run floorplan using OpenLANE
@@ -440,7 +440,7 @@ Examples of some switches are below
  FP_PDN_ENABLE_RAILS → enable power rails.
 ```
 
- ![image alt](https://github.com/Neha856/SoC_Design/blob/44d235590b7c24bf5e76309c9a7c71b7a024b999/Presentation7.png)
+ ![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation7.png)
  
 #### Running Floorplan
 
@@ -462,15 +462,15 @@ less picorv32a.def
 ```bash
 magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/df47d583fb0983e2d047984941e9ab3a311ca7b8/Presentation6.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation6.png)
 
 After that opening vnc website port and writing below command in tkcon window.
 ```tcl
 lef read ../../tmp/merged.nom.lef
 def read picorv32a.def
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/df47d583fb0983e2d047984941e9ab3a311ca7b8/Screenshot%202026-05-17%20213321.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/df47d583fb0983e2d047984941e9ab3a311ca7b8/Screenshot%202026-05-17%20213706.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-17%20213321.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-17%20213706.png)
 
 
 # Section 2 - Library Binding and Placement
@@ -480,7 +480,7 @@ def read picorv32a.def
 * A **library** is a collection of pre-designed cells like AND, OR, DFF, buffers, etc. Library contains timing, power, layout, and pin information of each cell.
 * Same **logic cell** can exist in multiple sizes/drive strengths such as `and2_1`, `and2_2`, `and2_4`. Bigger cells use larger transistors, giving lower resistance hence faster switching, but they consume more area and power.
 * Once we have given proper sizes and shapes to each and every gates , the **next step** is to take those cells and placed on the floorplan.
-  ![image alt](https://github.com/Neha856/SoC_Design/blob/9506486c2096b6b7aaf9cf6c34535bd3d6e688fa/Presentation8.png)
+  ![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation8.png)
 
 ## Lec2 : Optimize placement using estimated wire-length and capacitance
 
@@ -488,7 +488,7 @@ Before routing **Placement** is optimized using estimated wire length and capaci
 
 ## Lec3 : Final placement optimization
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/b2c479c123c9fa84972b28d0b20e4679c9570ef6/Presentation9.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation9.png)
 
 
 ## Lec4 : Need for libraries and characterization
@@ -515,7 +515,7 @@ Legalization is the process of adjusting placed standard cells into valid rows/s
 ```tcl
 run_placement
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/df47d583fb0983e2d047984941e9ab3a311ca7b8/Screenshot%202026-05-17%20221445.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-17%20221445.png)
 
 After this completes, we can inspect the DEF file that was generated:
 
@@ -533,8 +533,8 @@ After that opening vnc website port and writing below command in tkcon window.
 lef read ../../tmp/merged.nom.lef
 def read picorv32a.def
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/df47d583fb0983e2d047984941e9ab3a311ca7b8/Screenshot%202026-05-17%20221751.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/df47d583fb0983e2d047984941e9ab3a311ca7b8/Screenshot%202026-05-17%20222200.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-17%20221751.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-17%20222200.png)
 
 
 # Section 3 - Cell design and characterization flows 
@@ -575,7 +575,7 @@ Timing threshold definitions specify the voltage percentages used to measure sig
 * IO placement is the process of arranging input and output pins around the chip boundary during floorplanning. It helps reduce routing congestion and improves connectivity between external pins and internal logic.
 * We changed the floorplan switch `FP_IO_MODE` from `1` to `2` to observe different IO pin arrangements. Initially, the older Docker/OpenLane setup produced errors during floorplanning, so a newer Docker container was pulled and used successfully. After loading the generated DEF file in Magic, we analyzed the floorplan and observed that with `FP_IO_MODE=2`, the IO pins appeared more closely packed and distributed differently around the chip boundary.
 
- ![image alt](https://github.com/Neha856/SoC_Design/blob/141aa6ba51ac45077d33e8532ef9f658960bf0b9/Presentation10.png)
+ ![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation10.png)
 
 ```bash
 cd ~/Desktop/OpenLane
@@ -608,7 +608,7 @@ magic -T /home/vscode/.ciel/sky130A/libs.tech/magic/sky130A.tech
 lef read ../../tmp/merged.nom.lef
 def read picorv32a.def
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/141aa6ba51ac45077d33e8532ef9f658960bf0b9/Presentation11.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation11.png)
 
 ## Lec1&2 :  SPICE deck creation for CMOS inverter
 
@@ -617,8 +617,7 @@ def read picorv32a.def
    - **1.Body effect:** Threshold voltage changes if: VSB ≠ 0.This changes transistor behavior.V
    - **2.Prevents Unwanted Diode Conduction:** Inside MOSFET there are parasitic PN junction diodes. Wrong body connection can forward bias diode cause current           flow which damage logic behavior.
    - **3.Prevents Latch-Up:** In CMOS NMOS and PMOS create parasitic bipolar transistors, improper substrate/well bias may trigger latch-up this can cause huge           current and chip failure.
-![image alt](https://github.com/Neha856/SoC_Design/blob/c99b84dea43c5bcdde58f5270e9cc7bbefa6b7f0/Screenshot%202026-05-21%20140057.png)
-
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20140057.png)
 
 
 ## Lec3 :  Switching Threshold Vm
@@ -634,7 +633,7 @@ def read picorv32a.def
 
 **Switching Threshold is Controlled** Mainly by transistor sizing (W/L) ratio. Practical Fact is that Electron mobility `μn > μp`. NMOS is naturally stronger than PMOS. So PMOS width has to be increased. Generally `Wp ≈ (2–3times) × Wn` which helps shift threshold near mid-supply.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/483dd3b9b4ca77373e3caf1c2a8973d93fc39f54/Presentation12.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation12.png)
 
 ## Lec4 :  Static and dynamic simulation of CMOS inverter
 
@@ -694,21 +693,21 @@ magic -T sky130A.tech sky130_inv.mag &
 **8. Higher-Level Metal Formation** Multiple metal layers are formed for complex routing. Vias connect different metal layers vertically. Higher metal layers reduce routing congestion and resistance.
 
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/d9e2652fc81cf62761a51ddb7082dda8bf1884bd/fLvKx6JAIcLEqST69dvGgISS_FgibgkDVNNacmob7CvB3hrqdP2t2d-J5rca-e2NwgUqlEf6CBTj9OnhWaz4L77zN-cJ-GzIQ-cx8-6NF2E8EKSdcBd4V3KzGqQXvHk1OuLJ-IOXST0KjoDZ6Cw2EbGN1AVm_UMTS6BFwyYgXjgBZtatYx71_NAZfvJyCJ0e.jpg)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/fLvKx6JAIcLEqST69dvGgISS_FgibgkDVNNacmob7CvB3hrqdP2t2d-J5rca-e2NwgUqlEf6CBTj9OnhWaz4L77zN-cJ-GzIQ-cx8-6NF2E8EKSdcBd4V3KzGqQXvHk1OuLJ-IOXST0KjoDZ6Cw2EbGN1AVm_UMTS6BFwyYgXjgBZtatYx71_NAZfvJyCJ0e.jpg)
 
 ## Lec8 : Lab introduction to Sky130 basic layers layout and LEF using inverter
 Using Vnc_lite.html website we have open custom layout of Cmos inverter in magic And NMOS and PMOS identified.
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/1fbe45e4e0fec992417a0bd3166605037787370e/Screenshot%202026-05-19%20190039.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/1fbe45e4e0fec992417a0bd3166605037787370e/Screenshot%202026-05-19%20191037.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20190039.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20191037.png)
 Verified the output Y connectivity to PMOS and NMOS drain 
-![image alt](https://github.com/Neha856/SoC_Design/blob/1fbe45e4e0fec992417a0bd3166605037787370e/Screenshot%202026-05-19%20191439.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20191439.png)
 
 
 ## Lec8 : Lab steps to create std cell layout and extract spice netlist
 
 - Deleting necessary layout part to see DRC error
-![image alt](https://github.com/Neha856/SoC_Design/blob/1fbe45e4e0fec992417a0bd3166605037787370e/Screenshot%202026-05-19%20192625.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20192625.png)
 - Commands for spice extraction of the custom inverter layout to be used in tkcon window of magic
 
 ```tcl
@@ -724,24 +723,23 @@ ext2spice cthresh 0 rthresh 0
 # Converting to ext to spice
 ext2spice
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/1fbe45e4e0fec992417a0bd3166605037787370e/Screenshot%202026-05-19%20205750.png)
-
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20205750.png)
 
 
 # Section 3 - Sky130 Tech File Labs 
 ## Lec1 : Lab steps to create final SPICE deck using Sky130 tech
 
 Screenshot of created spice file
-![image alt](https://github.com/Neha856/SoC_Design/blob/4eb714e11e0ddfae290725fd84df8307aed635e6/Screenshot%202026-05-19%20210053.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20210053.png)
 
 Measuring unit distance in layout grid
-![image alt](https://github.com/Neha856/SoC_Design/blob/8bbe0c5c96356d998b145da4e37f0c08e059f505/Screenshot%202026-05-19%20211506.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20211506.png)
 
 Screenshot of library model name 
-![image alt](https://github.com/Neha856/SoC_Design/blob/8bbe0c5c96356d998b145da4e37f0c08e059f505/Screenshot%202026-05-19%20214056.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-19%20214056.png)
 
 Editing the spice model file for analysis through simulation.
-![image alt](https://github.com/Neha856/SoC_Design/blob/8bbe0c5c96356d998b145da4e37f0c08e059f505/Screenshot%202026-05-21%20154546.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20154546.png)
 
 
 ## Lec2 : Lab steps to characterize inverter using sky130 model files
@@ -753,8 +751,8 @@ ngspice sky130_inv.spice
 # plotting input and ouput with respect to time
 plot y vs time a
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/bbb49b6cf87e88988a77fd35072108e3477574c6/Screenshot%202026-05-20%20142403.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/bbb49b6cf87e88988a77fd35072108e3477574c6/Screenshot%202026-05-20%20143136.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20142403.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20143136.png)
 
 **Rise transition time calculation**
 
@@ -768,7 +766,7 @@ Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ ta
 80\%\ of\ output = 2.64\ V
 ```
 
-![image alt](https://github.com/Neha856/SoC_Design/blob/e8fea97ed7041b58bb0668bdbfffdd8291f6cbb6/Presentation13.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation13.png)
 
 **Fall transition time calculation**
 
@@ -781,7 +779,7 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
 ```math
 80\%\ of\ output = 2.64\ V
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/e8fea97ed7041b58bb0668bdbfffdd8291f6cbb6/Presentation14.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation14.png)
 
 **Rise Cell Delay Calculation**
 
@@ -791,7 +789,7 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 ```math
 50\%\ of\ 3.3\ V = 1.65\ V
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/e8fea97ed7041b58bb0668bdbfffdd8291f6cbb6/Presentation15.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation15.png)
 
 **Fall Cell Delay Calculation**
 
@@ -801,7 +799,7 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 ```math
 50\%\ of\ 3.3\ V = 1.65\ V
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/e8fea97ed7041b58bb0668bdbfffdd8291f6cbb6/Presentation16.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Presentation16.png)
 
 
 ## Lec3 : Lab introduction to Magic tool options and DRC rules
@@ -836,15 +834,15 @@ vim .magicrc
 # Command to open magic tool in better graphics
 magic -d XR &
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/80fadbf0eea32040de9507e7b2c55959b30408e9/Screenshot%202026-05-20%20165940.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20165940.png)
 
 
 ## Lec5 : Lab introduction to Magic and steps to load Sky130 tech-rules
 
 After loading met3.mag file getting 
-![image alt](https://github.com/Neha856/SoC_Design/blob/ae65ce30039f3b55b90bdb1632341242dbc1b4e2/Screenshot%202026-05-20%20171654.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20171654.png)
 Checking drc of selected area
-![image alt](https://github.com/Neha856/SoC_Design/blob/53bd4035561e54124ad68c5cd6f1c3eeb7117a8c/Screenshot%202026-05-20%20172204.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20172204.png)
 
 ## Lec6 : Lab exercise to fix poly.9 error in Sky130 tech-file
 
@@ -854,19 +852,19 @@ load poly
 # checking poly layer
 what
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/887ab6067e59f287b2160ad3fe34d9cd50099e7d/Screenshot%202026-05-20%20173140.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/887ab6067e59f287b2160ad3fe34d9cd50099e7d/Screenshot%202026-05-20%20173243.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20173140.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20173243.png)
 
 Screenshot of poly rules
 ![Screenshot from 2024-03-21 22-54-49](https://github.com/fayizferosh/soc-design-and-planning-nasscom-vsd/assets/63997454/9260cf37-5933-44a1-8362-597183644334)
 
 Incorrectly implemented poly.9 rule no drc violation even though spacing < 0.48u 
-![image alt](https://github.com/Neha856/SoC_Design/blob/887ab6067e59f287b2160ad3fe34d9cd50099e7d/Screenshot%202026-05-20%20173508.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20173508.png)
 
 
 New commands inserted in sky130A.tech file to update drc(NOTE: One error in screenshot there is no space before uhrpoly)
-![image alt](https://github.com/Neha856/SoC_Design/blob/2cd8c5354f43908bb6b17b43063a058323b3d621/Screenshot%202026-05-20%20175451.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/2cd8c5354f43908bb6b17b43063a058323b3d621/Screenshot%202026-05-20%20175842.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20175451.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20175842.png)
 
 Commands to run in tkcon window
 
@@ -880,23 +878,23 @@ drc check
 # Selecting region displaying the new errors and getting the error messages 
 drc why
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/2cd8c5354f43908bb6b17b43063a058323b3d621/Screenshot%202026-05-20%20215913.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20215913.png)
 
 ## lec7to9 : Lab exercise to implement poly resistor spacing to diff and tap
 
 Making copies of resistor to check diffusion 
-![image alt](https://github.com/Neha856/SoC_Design/blob/2cd8c5354f43908bb6b17b43063a058323b3d621/Screenshot%202026-05-20%20230008.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20230008.png)
 
 **Incorrectly implemented difftap.2 simple rule correction** Screenshot of difftap rules are below
-![image alt](https://github.com/Neha856/SoC_Design/blob/2cd8c5354f43908bb6b17b43063a058323b3d621/Screenshot%202026-05-20%20231917.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20231917.png)
 
 **Incorrectly implemented nwell.4 complex rule correction** Screenshot of nwell rules are below 
-![image alt](https://github.com/Neha856/SoC_Design/blob/58743e15a0721813c2d9f6d9048ae178fe0e05e9/Screenshot%202026-05-20%20232016.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20232016.png)
 
 ```bash
 load nwell.mag
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/58743e15a0721813c2d9f6d9048ae178fe0e05e9/Screenshot%202026-05-20%20235418.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20235418.png)
 
 Commands to run in tkcon window
 
@@ -913,7 +911,7 @@ drc check
 # Selecting region displaying the new errors and getting the error messages 
 drc why
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/58743e15a0721813c2d9f6d9048ae178fe0e05e9/Screenshot%202026-05-20%20235905.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-20%20235905.png)
 
 </details>
 
@@ -934,8 +932,8 @@ cd Desktop/OpenLane/vsdstdcelldesign
 magic -T sky130A.tech sky130_inv.mag &
 ```
 Screenshot of tracks.info of sky130_fd_sc_hd
-![image alt](https://github.com/Neha856/SoC_Design/blob/d9ebcb1150467047f6619b8e2ea492b99fce8a7a/Screenshot%202026-05-21%20210030.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/d9ebcb1150467047f6619b8e2ea492b99fce8a7a/Screenshot%202026-05-21%20210016.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20210030.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20210016.png)
 
 
 Commands for tkcon window to set grid as tracks of locali layer
@@ -946,14 +944,14 @@ help grid
 # Set grid values accordingly
 grid 0.46um 0.34um 0.23um 0.17um
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/d9ebcb1150467047f6619b8e2ea492b99fce8a7a/Screenshot%202026-05-21%20211117.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/d9ebcb1150467047f6619b8e2ea492b99fce8a7a/Screenshot%202026-05-21%20211318.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20211117.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20211318.png)
 
 Condition 1 verified
 ```math
 Horizontal\ track\ pitch = 0.46\ um
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/d9ebcb1150467047f6619b8e2ea492b99fce8a7a/Screenshot%202026-05-21%20212112.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20212112.png)
 
 ```math
 Width\ of\ standard\ cell = 1.39\ um = 0.46 * 3
@@ -963,7 +961,7 @@ Condition 2 verified
 ```math
 Vertical\ track\ pitch = 0.34\ um
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/d9ebcb1150467047f6619b8e2ea492b99fce8a7a/Screenshot%202026-05-21%20212408.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20212408.png)
 
 ```math
 Height\ of\ standard\ cell = 2.70\ um = 0.34 * 8
@@ -981,14 +979,14 @@ save sky130_vsdinv.mag
 # Command to open custom inverter layout in magic
 magic -T sky130A.tech sky130_vsdinv.mag &
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/4c81b0574205a66ed7c3572916f64b44564fd3e3/Screenshot%202026-05-22%20213947.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-22%20213947.png)
 
 ```tcl
 # lef command
 lef write
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/4c81b0574205a66ed7c3572916f64b44564fd3e3/Screenshot%202026-05-22%20214054.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/4c81b0574205a66ed7c3572916f64b44564fd3e3/Screenshot%202026-05-21%20215447.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-22%20214054.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20215447.png)
 
 
 ## lec3 : Introduction to timing libs and steps to include new cell in synthesis
@@ -1046,7 +1044,7 @@ set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/sr
 ```
 
 Edited config.tcl to include the added lef and change library to ones we added in src directory
-![image alt](https://github.com/Neha856/SoC_Design/blob/2d379650e66743d179e2d1d384a327a3561aba87/Screenshot%202026-05-21%20221347.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20221347.png)
 
 Commands to invoke the OpenLANE flow include new lef and perform synthesis 
 
@@ -1073,7 +1071,7 @@ add_lefs -src $lefs
 # Now that the design is prepped and ready, we can run synthesis using following command
 run_synthesis
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/a30b57188ded1e16565b869bc026f42e1a4128b9/Screenshot%202026-05-21%20222709.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20222709.png)
 
 Commands to view and change parameters to improve timing and run synthesis
 
@@ -1106,8 +1104,8 @@ echo $::env(SYNTH_DRIVING_CELL)
 # Now that the design is prepped and ready, we can run synthesis using following command
 run_synthesis
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/a30b57188ded1e16565b869bc026f42e1a4128b9/Screenshot%202026-05-21%20233607.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/a30b57188ded1e16565b869bc026f42e1a4128b9/chip_area.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20233607.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/chip_area.png)
 ![image alt](https://github.com/Neha856/SoC_Design/blob/a30b57188ded1e16565b869bc026f42e1a4128b9/time_slack.png)
 
 Now that our custom inverter is properly accepted in synthesis we can now run floorplan using following command
@@ -1116,7 +1114,7 @@ Now that our custom inverter is properly accepted in synthesis we can now run fl
 # Now we can run floorplan
 run_floorplan
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/a30b57188ded1e16565b869bc026f42e1a4128b9/Screenshot%202026-05-21%20235306.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-21%20235306.png)
 
 Now that floorplan is done we can do placement using following command
 
@@ -1124,18 +1122,18 @@ Now that floorplan is done we can do placement using following command
 # Now we are ready to run placement
 run_placement
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/a30b57188ded1e16565b869bc026f42e1a4128b9/Screenshot%202026-05-22%20001205.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-22%20001205.png)
 
 load placement def in magic in another terminal
-![image alt](https://github.com/Neha856/SoC_Design/blob/a5383364748c8dc796a964af42e0e33175b2ae45/Screenshot%202026-05-22%20001821.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/6c84fed9ba5591035cb008b4b49109f95be7bdc7/Screenshot%202026-05-23%20042329.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-22%20001821.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20042329.png)
 Command for tkcon window to view internal layers of cells
 
 ```tcl
 # Command to view internal connectivity layers
 expand
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/6c84fed9ba5591035cb008b4b49109f95be7bdc7/Screenshot%202026-05-23%20042353.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20042353.png)
 
 
 # Section 2 - Timing analysis with ideal clocks using openSTA
@@ -1288,7 +1286,7 @@ Excessive skew can cause setup or hold timing violations, affecting circuit perf
 
 #### *Positive edge triggered FF using Master slave configuration:*
 connect negative latch o/p to i/p of positive latch.
-![image alt](https://github.com/Neha856/SoC_Design/blob/4f331a1d5512f5fed6b92d58f4d143deb224fd84/Copilot_20260523_032001.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Copilot_20260523_032001.png)
 
 #### *JITTER ANAYSIS:*
 Jitter analysis measures the timing variation of a clock signal’s edges from their ideal positions over time.
@@ -1322,9 +1320,9 @@ The analysis ensures timing holds even if one region is slower and another is fa
 
 ## Lec3 :Lab steps to configure OpenSTA for post-synth timing analysis
 Similarly running OpenSTA and newly file created `pre_sta.conf` for STA analysis in `openlane` directory
-![image alt](https://github.com/Neha856/SoC_Design/blob/729c5debf340022ed71acea878798e41d7b67734/Screenshot%202026-05-23%20043049.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20043049.png)
 Newly created `my_base.sdc` for STA analysis in `OpenLane/designs/picorv32a/src` directory based on the file `OpenLane/scripts/base.sdc`
-![image alt](https://github.com/Neha856/SoC_Design/blob/36990393ec17c58429f1d0e41e3474c3d76707f1/Screenshot%202026-05-23%20043320.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20043320.png)
 
 
 Commands to run STA in another terminal
@@ -1335,7 +1333,7 @@ cd Desktop/OpenLane
 # Command to invoke OpenSTA tool with script
 sta pre_sta.conf
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/0d0955ffa09a5f2dd400d85e01b0cee16400224d/Screenshot%202026-05-23%20043857.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20043857.png)
 
 ## Lec4 :Lab steps to optimize synthesis to reduce setup violations
 Since more fanout is causing more delay we can add parameter to reduce fanout and do synthesis again
@@ -1372,7 +1370,7 @@ cd Desktop/work/tools/openlane_working_dir/openlane
 # Command to invoke OpenSTA tool with script
 sta pre_sta.conf
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/a1effb8255f79597def93e084bdd90595661ee32/Screenshot%202026-05-23%20044708.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20044708.png)
 
 ## Lec5 : Lab steps to do basic timing ECO
 Command to run OpenROAD tool
@@ -1403,7 +1401,7 @@ openroad
 # Generating custom timing report
 report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/b83894eac623a2ef72951e822549282bd6c83ca6/Screenshot%202026-05-23%20045722.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20045722.png)
 
 </details>
 
@@ -1476,10 +1474,10 @@ run_cts
 # Now that CTS is done we can do power distribution network
 gen_pdn 
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/167c5d2eee4ee8dd7626c87a0c569a06e10f8634/Screenshot%202026-05-23%20051238.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20051238.png)
 After loading PDN def in magic 
-![image alt](https://github.com/Neha856/SoC_Design/blob/167c5d2eee4ee8dd7626c87a0c569a06e10f8634/Screenshot%202026-05-23%20051337.png)
-![image alt](https://github.com/Neha856/SoC_Design/blob/167c5d2eee4ee8dd7626c87a0c569a06e10f8634/Screenshot%202026-05-23%20051406.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20051337.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20051406.png)
 
 
 
@@ -1497,7 +1495,7 @@ echo $::env(ROUTING_STRATEGY)
 # Command for detailed route using TritonRoute
 run_routing
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/527590344fa8f1395dd0e0377e975ee3da65f0e1/Screenshot%202026-05-23%20052859.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-23%20052859.png)
 
 
  ## L4 : Routing topology algorithm and final files list post-route
@@ -1532,7 +1530,7 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 # Exit to OpenLANE flow
 exit
 ```
-![image alt](https://github.com/Neha856/SoC_Design/blob/f42c3f31e1843533b6d88c4f627158ae9f61e894/Screenshot%202026-05-15%20090114.png)
+![image alt](https://github.com/Neha856/Digital_VLSI_SoC_Design_and_planning_VSD_NASSCOM/blob/9b0a2c6c233664805d279e4755f18d07f2a1f3af/Images/Screenshot%202026-05-15%20090114.png)
 
 </details>
 
